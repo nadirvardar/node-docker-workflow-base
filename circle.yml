@@ -10,3 +10,9 @@ test:
   override:
     - sudo pip install --upgrade docker-compose
     - cd app; mocha
+
+deployment:
+  hub:
+    branch: master
+    commands:
+      - $DEPLOY
